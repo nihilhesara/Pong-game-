@@ -25,5 +25,9 @@ screen.listen()
 screen.onkey(go_up, "Up")
 screen.onkey(go_down, "Down")
 
+game_is_on = True
+while game_is_on:
+    screen.update()                 # Update screen after animation removed
+
 
 screen.exitonclick() 
