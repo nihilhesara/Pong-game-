@@ -26,7 +26,8 @@ while game_is_on:
     screen.update()                 # Update screen after animation removed
     ball.move()
 
-    if ball.ycor() > 300 or ball.ycor() < -300:
+    # Detect collision with the wall
+    if ball.ycor() > 280 or ball.ycor() < -280:
         ball.bounce()
 
 
