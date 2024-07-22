@@ -26,5 +26,8 @@ while game_is_on:
     screen.update()                 # Update screen after animation removed
     ball.move()
 
+    if ball.ycor() > 300 or ball.ycor() < -300:
+        ball.bounce()
+
 
 screen.exitonclick() 
